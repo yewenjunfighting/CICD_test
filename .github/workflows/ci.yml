@@ -18,14 +18,17 @@ jobs:
       - name: 🛎️ 拉取代码
         uses: actions/checkout@v4
 
-      - name: ⚡ 设置 Node.js & pnpm
+      - name: ⚡ 设置 Node.js（20.18.3） & 启用 pnpm
         uses: actions/setup-node@v4
         with:
           node-version: 20.18.3
           cache: 'pnpm'
 
-      - name: 📦 安装 pnpm
-        run: npm install -g pnpm
+      - name: 📦 安装 pnpm（通过 corepack）
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+          pnpm --version
 
       - name: 📦 复用 pnpm 依赖缓存
         uses: actions/cache@v4
