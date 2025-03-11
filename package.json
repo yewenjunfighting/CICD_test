@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "lint": "eslint src/**"
+    "lint": "eslint src/** --fix"
   },
   "author": "",
   "license": "ISC",
