@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      lodash:
-        specifier: 2.0.0
-        version: 2.0.0
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -1087,10 +1084,6 @@ packages:
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
-
-  lodash@2.0.0:
-    resolution: {integrity: sha512-6Ebs0FtZaSrJX8Kr+yFYBlWpv5yoRWiaVQCeiSQiJxouECdp3JXvWiWymwsv3uK3qTmV3OB72nFc8w8Fn76imA==}
-    engines: {'0': node, '1': rhino}
 
   loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
@@ -2798,8 +2791,6 @@ snapshots:
       p-locate: 5.0.0
 
   lodash.merge@4.6.2: {}
-
-  lodash@2.0.0: {}
 
   loose-envify@1.4.0:
     dependencies:
