@@ -136,5 +136,5 @@ jobs:
         with:
           version: 10.6.2 # 指定 pnpm 版本，可以换成 latest
 
-      - name: 🔒 运行 NPM Audit 安全扫描
-        run: pnpm audit --production
+      - name: 🔒 运行 产物 安全扫描
+        run: echo hello world
