@@ -104,6 +104,11 @@ jobs:
           name: build-output
           path: dist
 
+      - name: 📦 安装 pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10.6.2 # 指定 pnpm 版本，可以换成 latest
+
       - name: 🧪 运行 Jest 兼容性测试
         run: pnpm run test
 
@@ -120,6 +125,11 @@ jobs:
         with:
           name: build-output
           path: dist
+
+      - name: 📦 安装 pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10.6.2 # 指定 pnpm 版本，可以换成 latest
 
       - name: 🔒 运行 NPM Audit 安全扫描
         run: pnpm audit --production
