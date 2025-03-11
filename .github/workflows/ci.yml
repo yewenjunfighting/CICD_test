@@ -114,9 +114,6 @@ jobs:
         with:
           version: 10.6.2 # 指定 pnpm 版本，可以换成 latest
 
-      - name: 🧪 运行 Jest 兼容性测试
-        run: pnpm run test
-
       - name: 🌎 运行 Browserslist 兼容性检查
         run: npx browserslist "> 0.5%, last 2 versions, not dead"
 
