@@ -55,6 +55,11 @@ jobs:
       - name: 🛎️ 拉取代码
         uses: actions/checkout@v4
 
+      - name: 📦 安装 pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10.6.2 # 指定 pnpm 版本，可以换成 latest
+
       - name: 📦 复用 node_modules
         uses: actions/cache@v4
         with:
