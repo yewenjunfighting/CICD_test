@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Production
+dist/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+logs
+*.log
+pnpm-debug.log*
+
+# Editor directories and files
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
